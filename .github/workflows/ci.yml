@@ -12,8 +12,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Make bin scripts executable
-        run: chmod +x bin/*
+      - name: Make Brakeman executable
+        run: chmod +x bin/brakeman
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -31,8 +31,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Make bin scripts executable
-        run: chmod +x bin/*
+      - name: Make RuboCop executable
+        run: chmod +x bin/rubocop
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
